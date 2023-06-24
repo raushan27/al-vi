@@ -11,7 +11,11 @@ function doinsertionSort(animations, auxArr) {
     let j = i - 1;
     while (j >= 0) {
       animations.push({ indices: [j, j + 1], type: "comp", color: "red" });
-      animations.push({ indices: [j, j + 1], type: "comp", color: "green" });
+      animations.push({
+        indices: [j, j + 1],
+        type: "comp",
+        color: "rgb(168, 13, 251)",
+      });
       if (auxArr[j] > temp) {
         animations.push({
           indices: [j, auxArr[j + 1]],

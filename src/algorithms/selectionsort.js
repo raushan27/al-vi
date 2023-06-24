@@ -10,7 +10,11 @@ function doselectionSort(animations, auxArr) {
     let minIdx = i;
     for (let j = i + 1; j < auxArr.length; ++j) {
       animations.push({ indices: [j, minIdx], type: "comp", color: "red" });
-      animations.push({ indices: [j, minIdx], type: "comp", color: "green" });
+      animations.push({
+        indices: [j, minIdx],
+        type: "comp",
+        color: "rgb(168, 13, 251)",
+      });
       if (auxArr[j] < auxArr[minIdx]) {
         minIdx = j;
       }

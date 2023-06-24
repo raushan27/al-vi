@@ -58,18 +58,20 @@ function Searchpage() {
           ))}
         </div>
 
-        <div className="card" style={{ padding: "50px" }}>
-          <div className="mybutton" onClick={linearSearchClicked}>
-            <h2>Linear Search</h2>
-          </div>
+        <div className="card" style={{ padding: "50px 50px 8px 50px" }}>
+          <button className="btn" onClick={linearSearchClicked}>
+            Linear Search
+          </button>
 
-          <div className="mybutton" onClick={binarySearchClicked}>
-            <h2>Binary Search</h2>
-          </div>
+          <button className="btn" onClick={binarySearchClicked}>
+            Binary Search
+          </button>
         </div>
 
         <div style={{ textAlign: "center", color: "lightBrown" }}>
-          <h2>Target is always 100 for reference</h2>
+          <h2 style={{ fontSize: "18px" }}>
+            Target is always 100 for reference
+          </h2>
         </div>
       </div>
     </div>

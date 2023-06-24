@@ -78,21 +78,21 @@ function Sortpage() {
         </div>
 
         <div className="card" style={{ padding: "50px" }}>
-          <div className="mybutton" onClick={mergeSortClicked}>
-            <h2>Merge Sort</h2>
-          </div>
+          <button className="btn" onClick={mergeSortClicked}>
+            Merge Sort
+          </button>
 
-          <div className="mybutton" onClick={insertionSortClicked}>
-            <h2>Insertion Sort</h2>
-          </div>
+          <button className="btn" onClick={insertionSortClicked}>
+            Insertion Sort
+          </button>
 
-          <div className="mybutton" onClick={selectionSortClicked}>
-            <h2>Selection Sort</h2>
-          </div>
+          <button className="btn" onClick={selectionSortClicked}>
+            Selection Sort
+          </button>
 
-          <div className="mybutton" onClick={bubbleSortClicked}>
-            <h2>Bubble Sort</h2>
-          </div>
+          <button className="btn" onClick={bubbleSortClicked}>
+            Bubble Sort
+          </button>
         </div>
       </div>
     </div>

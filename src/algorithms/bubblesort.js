@@ -11,7 +11,11 @@ const dobubbleSort = (animations, auxArr) => {
     let swapped = false;
     for (let j = 0; j < n - i - 1; ++j) {
       animations.push({ indices: [j, j + 1], type: "comp", color: "red" });
-      animations.push({ indices: [j, j + 1], type: "comp", color: "green" });
+      animations.push({
+        indices: [j, j + 1],
+        type: "comp",
+        color: "rgb(168, 13, 251)",
+      });
       if (auxArr[j] > auxArr[j + 1]) {
         swapped = true;
         animations.push({

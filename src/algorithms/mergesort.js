@@ -19,7 +19,11 @@ function doMerge(auxArr, startIdx, middleIdx, endIdx, animations) {
   let tempArr = [];
   while (i <= middleIdx && j <= endIdx) {
     animations.push({ indices: [i, j], type: "comp", color: "red" });
-    animations.push({ indices: [i, j], type: "comp", color: "green" });
+    animations.push({
+      indices: [i, j],
+      type: "comp",
+      color: "rgb(168, 13, 251)",
+    });
 
     if (auxArr[i] <= auxArr[j]) {
       tempArr.push(auxArr[i++]);

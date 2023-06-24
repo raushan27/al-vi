@@ -12,7 +12,7 @@ function dolinearSearch(arr, number, animations) {
       break;
     }
 
-    animations.push({ indices: [i], type: "comp", color: "green" });
+    animations.push({ indices: [i], type: "comp", color: "rgb(168, 13, 251)" });
   }
 }
 

@@ -19,7 +19,11 @@ function dobinarySearch(arr, number, animations) {
     } else if (number == arr[mid]) {
       break;
     }
-    animations.push({ indices: [mid], type: "comp", color: "green" });
+    animations.push({
+      indices: [mid],
+      type: "comp",
+      color: "rgb(168, 13, 251)",
+    });
   }
 }
 

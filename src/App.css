@@ -25,6 +25,15 @@
   padding: 10px;
   transition: 0.2s;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.algoImage {
+  height: 170px;
+  width: 300px;
 }
 
 .individualCard:hover {
@@ -39,10 +48,11 @@
   justify-content: center;
   align-items: flex-end;
   margin-top: 20px;
+  height: 30rem;
 }
 
 .number-box {
-  background-color: green;
+  background-color: rgb(168, 13, 251);
   width: 0.5vw;
   margin: 3px;
   box-shadow: 3px 3px grey;
@@ -60,23 +70,47 @@
   margin-bottom: 20px;
 }
 
-.mybutton {
-  border: 2px solid black;
-  padding: 5px;
-  transition: 0.2s;
-  border-radius: 20px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #856464;
-  color: white;
-}
-
-.mybutton:hover {
-  background-color: wheat;
+.btn {
   cursor: pointer;
-  transform: scale(1.1);
+  position: relative;
+  height: 40px;
+  padding: 10px 20px;
+  background: #e6fffd;
+  font-weight: bold;
+  font-size: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 0.5s;
+  &:after,
+  &:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 0.5s;
+  }
+  &:after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+  }
+  &:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+  }
+  &:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    &:before,
+    &:after {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 ellipse {

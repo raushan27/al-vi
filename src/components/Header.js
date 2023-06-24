@@ -1,4 +1,5 @@
-import Logo from "../assets/Logo.png";
+import Logo from "../images/Logo.png";
+import GithubLogo from "../images/github.png";
 import { useNavigate } from "react-router-dom";
 
 function Header() {
@@ -18,10 +19,10 @@ function Header() {
           src={Logo}
           alt="App Logo"
         />
-        <a href="https://github.com/">
+        <a href="https://github.com/raushan27/al-vi">
           <img
             style={{ height: "43px", margin: "10px" }}
-            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            src={GithubLogo}
             alt="git-logo"
           ></img>
         </a>
